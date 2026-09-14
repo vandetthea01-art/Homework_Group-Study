@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lead Page - Tailwind CSS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <header class="bg-white text-black p-4 flex justify-between items-center max-w-7xl mx-auto">
+    <h1 class="text-2xl font-serif px-6 font-bold">Lead Page</h1>
+    <div class="flex items-center gap-4">
+      <ul class="hidden md:flex gap-6 px-6 text-sm font-medium">
+        <li><a href="/" class="hover:text-gray-500 transition">Home</a></li>
+        <li><a href="/about" class="hover:text-gray-500 transition">About</a></li>
+        <li><a href="/blog" class="hover:text-gray-500 transition">Blog</a></li>
+        <li><a href="/contact" class="hover:text-gray-500 transition">Contact</a></li>
+      </ul>
+      <button class="bg-black text-white px-5 py-2 hover:bg-gray-800 text-sm transition">
+        Get Started
+      </button>
+    </div>
+  </header>
+
+  <section class="bg-black text-white min-h-screen flex items-center justify-center p-8 lg:p-16">
+    <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+      <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-3">
+          <h2 class="text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+            A dedicated team to grow your company
+          </h2>
+          <p class="text-gray-300 text-sm lg:text-base leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam
+            neque ultrices.
+          </p>
+        </div>
+
+        <div>
+          <ul class="flex flex-col gap-4">
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-circle-check text-indigo-600 text-xl"></i>
+              <span class="font-bold text-sm lg:text-base">Enim nunc faucibus a pellentesque sit amet.</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-circle-check text-indigo-600 text-xl"></i>
+              <span class="font-bold text-sm lg:text-base">Dolor sit amet consectetur me.</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-circle-check text-indigo-600 text-xl"></i>
+              <span class="font-bold text-sm lg:text-base">Sed lectus vestibulum mattis ullamcorper dolor.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-white text-black p-8 sm:p-10 rounded-3xl shadow-2xl">
+        <form class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-5">
+          <div class="flex flex-col gap-1.5">
+            <label for="first-name" class="font-bold text-xs text-gray-900">First name</label>
+            <input type="text" id="first-name" placeholder="First name"
+              class="w-full px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-[#ff0055] focus:ring-1 focus:ring-[#ff0055]">
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label for="last-name" class="font-bold text-xs text-gray-900">Last name</label>
+            <input type="text" id="last-name" placeholder="Last name"
+              class="w-full px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-[#ff0055] focus:ring-1 focus:ring-[#ff0055]">
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label for="email" class="font-bold text-xs text-gray-900">Email</label>
+            <input type="email" id="email" placeholder="example@email.com"
+              class="w-full px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-[#ff0055] focus:ring-1 focus:ring-[#ff0055]">
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label for="phone" class="font-bold text-xs text-gray-900">Phone</label>
+            <input type="tel" id="phone" placeholder="(414) 804 - 987"
+              class="w-full px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-[#ff0055] focus:ring-1 focus:ring-[#ff0055]">
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label for="company" class="font-bold text-xs text-gray-900">Company</label>
+            <input type="text" id="company" placeholder="Company"
+              class="w-full px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-[#ff0055] focus:ring-1 focus:ring-[#ff0055]">
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label for="role" class="font-bold text-xs text-gray-900">Role</label>
+            <input type="text" id="role" placeholder="Role"
+              class="w-full px-5 py-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:border-[#ff0055] focus:ring-1 focus:ring-[#ff0055]">
+          </div>
+          <button type="submit"
+            class="sm:col-span-2 mt-2 bg-[#ff0055] hover:bg-[#e0004c] text-white font-bold py-3.5 px-6 rounded-full text-sm transition active:scale-[0.99]">
+            Get started
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-white text-gray-900 py-16 px-6 lg:px-12 max-w-7xl mx-auto space-y-12">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#1E293B]">
+      Trusted by smart people in more than 140 countries
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+      <div class="flex flex-col justify-between pt-6 md:pt-0 md:px-6 space-y-6">
+        <p class="text-gray-500 text-sm leading-relaxed">
+          "The ability to completely customize the data fields and workflow has been tried by many others but this is
+          the first one that is the best sales tracking software!"
+        </p>
+        <div class="space-y-3">
+          <div>
+            <h4 class="font-bold text-gray-800 text-sm">Master Yoda</h4>
+            <p class="text-xs text-gray-500">COO & Grand Master</p>
+          </div>
+          <img src="https://uploads-ssl.webflow.com/6516bc940db8f4a1d243e56a/6516bc940db8f4a1d243e584_Group%20851.png" alt="">
+        </div>
+      </div>
+      <div class="flex flex-col justify-between pt-6 md:pt-0 md:px-6 space-y-6">
+        <p class="text-gray-500 text-sm leading-relaxed">
+          "The ability to completely customize the data software that's so easy to customize as we go!"
+        </p>
+        <div class="space-y-3">
+          <div>
+            <h4 class="font-bold text-gray-800 text-sm">Master Yoda</h4>
+            <p class="text-xs text-gray-500">COO & Grand Master</p>
+          </div>
+          <img src="https://uploads-ssl.webflow.com/6516bc940db8f4a1d243e56a/6516bc940db8f4a1d243e586_Group%20857.png" alt="">
+        </div>
+      </div>
+      <div class="flex flex-col justify-between pt-6 md:pt-0 md:px-6 space-y-6">
+        <p class="text-gray-500 text-sm leading-relaxed">
+          "The ability to completely customize the data fields and workflow has been tried by many others but this is
+          the first one."
+        </p>
+        <div class="space-y-3">
+          <div>
+            <h4 class="font-bold text-gray-800 text-sm">Master Yoda</h4>
+            <p class="text-xs text-gray-500">COO & Grand Master</p>
+          </div>
+          <img src="https://uploads-ssl.webflow.com/6516bc940db8f4a1d243e56a/6516bc940db8f4a1d243e585_Group%20862.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white text-gray-900 py-16 px-6 lg:px-16 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="flex flex-col gap-6">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
+          A dedicated team to grow your company
+        </h2>
+        <p class="text-gray-500 text-sm sm:text-base leading-relaxed max-w-lg">
+          Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque
+          ultrices.
+        </p>
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <button class="bg-[#ff0055] hover:bg-[#e0004c] text-white font-bold px-7 py-3 rounded-md text-sm transition">
+            Get started
+          </button>
+          <button
+            class="border border-black text-black font-semibold px-7 py-3 rounded-full text-sm hover:bg-black hover:text-white transition">
+            Talk to sales
+          </button>
+        </div>
+      </div>
+      <div class="flex justify-center lg:justify-end">
+        <img
+          src="https://uploads-ssl.webflow.com/6516bc940db8f4a1d243e56a/6516bc940db8f4a1d243e57d_7f9aa1de77efa7d3daa30c01f6cef28f.jpg"
+          alt="Team Illustration" class="w-full max-w-md lg:max-w-lg object-contain" />
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white text-gray-900 py-20 px-6 lg:px-16 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+      <span class="text-[#ff0055] font-bold text-xs uppercase tracking-widest">Our Process</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Get started as easy as 1, 2, 3</h2>
+      <p class="text-gray-500 text-sm leading-relaxed">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis
+        pellentesque ut quis.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+      <div class="flex flex-col items-center space-y-5">
+        <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-pink-50 flex items-center justify-center">
+          <span class="text-[#ff0055] text-4xl sm:text-5xl font-extrabold">1</span>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900">Download our free app</h3>
+        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed max-w-xs">Lorem ipsum dolor sit amet consecte tur
+          adipiscing elit semper dalar consectur elementum tempus hac.</p>
+      </div>
+      <div class="flex flex-col items-center space-y-5">
+        <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-pink-50 flex items-center justify-center">
+          <span class="text-[#ff0055] text-4xl sm:text-5xl font-extrabold">2</span>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900">Create an account</h3>
+        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed max-w-xs">Lorem ipsum dolor sit amet consecte tur
+          adipiscing elit semper dalar consectur elementum tempus hac.</p>
+      </div>
+      <div class="flex flex-col items-center space-y-5">
+        <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-pink-50 flex items-center justify-center">
+          <span class="text-[#ff0055] text-4xl sm:text-5xl font-extrabold">3</span>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900">Enjoy our app</h3>
+        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed max-w-xs">Lorem ipsum dolor sit amet consecte tur
+          adipiscing elit semper dalar consectur elementum tempus hac.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white text-gray-900 py-20 px-6 lg:px-16 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Browse our set of features</h2>
+      <p class="text-gray-500 text-sm leading-relaxed">Lorem ipsum dolor sit amet consectetur adipiscing elit semper
+        dalar elementum tempus hac tellus libero accumsan.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div
+        class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition flex items-start gap-6">
+        <div class="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center shrink-0">
+          <img
+            src="https://uploads-ssl.webflow.com/651046c4da09d5986bb5611c/651046c5da09d5986bb561e3_icon-brix-template-Mobile.svg"
+            alt="Mobile app" class="w-8 h-8 object-contain" />
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-xl font-bold text-gray-900">Mobile app</h3>
+          <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">Lorem ipsum dolor sit amet consecte tur adipiscing
+            elit semper dalar cons elementum tempus hac.</p>
+        </div>
+      </div>
+      <div
+        class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition flex items-start gap-6">
+        <div class="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center shrink-0">
+          <img
+            src="https://uploads-ssl.webflow.com/651046c4da09d5986bb5611c/651046c5da09d5986bb561d5_icon-brix-template-Desktop.svg"
+            alt="Desktop app" class="w-8 h-8 object-contain" />
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-xl font-bold text-gray-900">Desktop app</h3>
+          <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">Lorem ipsum dolor sit amet consecte tur adipiscing
+            elit semper dalar cons elementum tempus hac.</p>
+        </div>
+      </div>
+      <div
+        class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition flex items-start gap-6">
+        <div class="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center shrink-0">
+          <img
+            src="https://uploads-ssl.webflow.com/651046c4da09d5986bb5611c/651046c5da09d5986bb561ec_icon-brix-template-Users.svg"
+            alt="Multiple users" class="w-8 h-8 object-contain" />
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-xl font-bold text-gray-900">Multiple users</h3>
+          <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">Lorem ipsum dolor sit amet consecte tur adipiscing
+            elit semper dalar cons elementum tempus hac.</p>
+        </div>
+      </div>
+      <div
+        class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition flex items-start gap-6">
+        <div class="w-16 h-16 rounded-2xl bg-indigo-50 flex items-center justify-center shrink-0">
+          <img
+            src="https://uploads-ssl.webflow.com/6516bc940db8f4a1d243e56a/6516c7ecab329bb0ec2f7206_icon-brix-template-Gear.svg"
+            alt="Integrations" class="w-8 h-8 object-contain" />
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-xl font-bold text-gray-900">Integrations</h3>
+          <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">Lorem ipsum dolor sit amet consecte tur adipiscing
+            elit semper dalar cons elementum tempus hac.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-black text-gray-900 py-20 px-6 lg:px-16">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-8 rounded-2xl flex justify-between items-start gap-4">
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold text-[#0F172A]">Why is Webflow the best nocode tool?</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Ut enim ad minim veniam quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</p>
+          </div>
+          <button
+            class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center shrink-0 hover:bg-slate-200 transition">
+            <i class="fa-solid fa-plus text-slate-600 text-sm"></i>
+          </button>
+        </div>
+        <div class="bg-white p-8 rounded-2xl flex justify-between items-start gap-4">
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold text-[#0F172A]">How to launch a Webflow website?</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Ut enim ad minim veniam quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</p>
+          </div>
+          <button
+            class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center shrink-0 hover:bg-slate-200 transition">
+            <i class="fa-solid fa-plus text-slate-600 text-sm"></i>
+          </button>
+        </div>
+        <div class="bg-white p-8 rounded-2xl flex justify-between items-start gap-4">
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold text-[#0F172A]">When did Webflow was founded?</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Ut enim ad minim veniam quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</p>
+          </div>
+          <button
+            class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center shrink-0 hover:bg-slate-200 transition">
+            <i class="fa-solid fa-plus text-slate-600 text-sm"></i>
+          </button>
+        </div>
+        <div class="bg-white p-8 rounded-2xl flex justify-between items-start gap-4">
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold text-[#0F172A]">Who founded BRIX Templates?</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Ut enim ad minim veniam quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</p>
+          </div>
+          <button
+            class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center shrink-0 hover:bg-slate-200 transition">
+            <i class="fa-solid fa-plus text-slate-600 text-sm"></i>
+          </button>
+        </div>
+        <div class="bg-white p-8 rounded-2xl flex justify-between items-start gap-4">
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold text-[#0F172A]">Is NoCode the future of the web?</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Ut enim ad minim veniam quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</p>
+          </div>
+          <button
+            class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center shrink-0 hover:bg-slate-200 transition">
+            <i class="fa-solid fa-plus text-slate-600 text-sm"></i>
+          </button>
+        </div>
+        <div class="bg-white p-8 rounded-2xl flex justify-between items-start gap-4">
+          <div class="space-y-3">
+            <h3 class="text-xl font-bold text-[#0F172A]">Who are the Webflow founders?</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Ut enim ad minim veniam quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat aute irure dolor</p>
+          </div>
+          <button
+            class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center shrink-0 hover:bg-slate-200 transition">
+            <i class="fa-solid fa-plus text-slate-600 text-sm"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white text-gray-700 pt-16 pb-12 px-6 lg:px-16 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto space-y-12">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
+        <div class="space-y-4">
+          <h4 class="font-bold text-xs uppercase tracking-wider text-gray-900">Integrations</h4>
+          <ul class="space-y-2.5 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-black transition">Pricing</a></li>
+            <li><a href="#" class="hover:text-black transition">Integrations</a></li>
+            <li><a href="#" class="hover:text-black transition">Affiliate Programs</a></li>
+            <li class="flex items-center gap-2">
+              <a href="#" class="hover:text-black transition">Agency Partners</a>
+              <span class="bg-black text-white text-[10px] font-bold px-2 py-0.5 rounded-full">New</span>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h4 class="font-bold text-xs uppercase tracking-wider text-gray-900">Marketing</h4>
+          <ul class="space-y-2.5 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-black transition">Entrepreneur</a></li>
+            <li><a href="#" class="hover:text-black transition">Online marketer</a></li>
+            <li><a href="#" class="hover:text-black transition">Marketing manager</a></li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h4 class="font-bold text-xs uppercase tracking-wider text-gray-900">Head</h4>
+          <ul class="space-y-2.5 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-black transition">About</a></li>
+            <li><a href="#" class="hover:text-black transition">Careers</a></li>
+            <li><a href="#" class="hover:text-black transition">API Docs</a></li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h4 class="font-bold text-xs uppercase tracking-wider text-gray-900">Solutions</h4>
+          <ul class="space-y-2.5 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-black transition">Entrepreneur</a></li>
+            <li><a href="#" class="hover:text-black transition">Online marketer</a></li>
+            <li><a href="#" class="hover:text-black transition">Marketing manager</a></li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h4 class="font-bold text-xs uppercase tracking-wider text-gray-900">Editors</h4>
+          <ul class="space-y-2.5 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-black transition">Entrepreneur</a></li>
+            <li><a href="#" class="hover:text-black transition">Online marketer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200 pt-8 text-center text-sm text-gray-600">
+        <a href="#" class="underline font-medium text-gray-900">English</a>
+        <span class="mx-2">•</span>
+        <a href="#" class="hover:text-black transition">Espanol</a>
+        <span class="mx-2">•</span>
+        <a href="#" class="hover:text-black transition">Francais</a>
+      </div>
+
+      <div
+        class="border-t border-gray-200 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+        <div class="flex flex-wrap gap-6">
+          <a href="#" class="hover:text-black transition">Privacy Policy</a>
+          <a href="#" class="hover:text-black transition">Security Information</a>
+          <a href="#" class="hover:text-black transition">Integrations</a>
+        </div>
+        <p>Copyright © 2022</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
